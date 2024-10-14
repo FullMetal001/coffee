@@ -14,7 +14,7 @@
     transition: min-height 0.5s ease;    
 }
 .header.open {
-    min-height: 30vh;
+    min-height: 40vh;
 }
 .container {
     max-width: 1200px;
@@ -87,7 +87,11 @@
     }
     .menu .navbar.open {
         display: initial;        
-    } 
+    }     
+
+    .logo-imagen img {
+        width: 300px;
+    }
          
 }
 
