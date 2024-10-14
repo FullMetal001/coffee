@@ -54,9 +54,11 @@
 .logo-imagen {
     margin-top: 20px;
     transition: margin-top 0.3s ease;
+    max-width: 100%;
+    height: auto;
 }
 .logo-imagen.open {
-    margin-top: 140px;    
+    margin-top: 140px;        
 }
 
 @media(max-width:720px){
@@ -78,7 +80,11 @@
     }
     .menu .navbar.open {
         display: initial;        
-    }       
+    } 
+    .logo-imagen {
+        max-width: 80%;
+        height: auto;
+    }      
 }
 
 
