@@ -16,9 +16,9 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    
+
     return (
-        <header className="header">
+        <header className={`header ${menuOpen ? 'open' : ''}`}>
             <div className='menu container'>
                 <img src="/images/logo-icon.png" alt="Logo" className="logo" />
                 <input type='checkbox' id='menu' onChange={toggleMenu}/>
@@ -31,10 +31,7 @@ const Header = () => {
                         <li><a href='#'>Contacto</a></li>
                     </ul>
                 </nav>                
-            </div> 
-            <div className={`logo-imagen ${menuOpen ? 'open' : ''}`}>
-                    <img src='/images/logo1.png' alt='logo imagen'/>
-            </div>           
+            </div>                       
         </header>
     );
 };

@@ -9,8 +9,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 70vh;
-    background-color: #F8F3E5;
+    min-height: 10vh;
+    background-color: #F8F3E5;  
+    transition: min-height 0.5s ease;    
+}
+.header.open {
+    min-height: 30vh;
 }
 .container {
     max-width: 1200px;
@@ -32,8 +36,8 @@
     float: left;
 }
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 30px;
     color: #ce967b;
     display: block;
     font-weight: 600;
@@ -51,15 +55,18 @@
     cursor: pointer;
     display: none;
 }
+
 .logo-imagen {
-    margin-top: 20px;
-    transition: margin-top 0.3s ease;
-    max-width: 100%;
-    height: auto;
+    text-align: center;
+    width: 100%;   
+    background-color: #F8F3E5;     
+    max-width: 100%; 
+    height: auto; 
 }
-.logo-imagen.open {
-    margin-top: 140px;        
+.logo-imagen img {
+    width: 400px;
 }
+
 
 @media(max-width:720px){
     .menu {
@@ -81,10 +88,7 @@
     .menu .navbar.open {
         display: initial;        
     } 
-    .logo-imagen {
-        max-width: 80%;
-        height: auto;
-    }      
+         
 }
 
 
