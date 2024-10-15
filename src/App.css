@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +8,8 @@
     text-decoration: none; 
     list-style: none;
 }
+
+/* Barra menu */
 .header {    
     display: flex;
     flex-direction: column;
@@ -24,12 +29,13 @@
     position: relative;    
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-between;    
+    width: 100%; 
 }
 .logo {
-   width: 50px;
-   height: 50px;
+    margin-left: 20px;   
+    width: 50px;
+    height: 50px;
 }
 .menu .navbar ul li {
     position: relative;
@@ -39,23 +45,34 @@
     font-size: 20px;
     padding: 30px;
     color: #ce967b;
-    display: block;
+    display: block;    
     font-weight: 600;
+    text-decoration: none;
+    outline: none;
+}
+.menu .navbar ul li a:focus {
+    outline: none; 
 }
 .menu .navbar ul li a:hover{
     color: #f7d0bd;
 }
 #menu { /* id del checkbox */
-    display: none;
+    display: none;    
 }
-.menu-icono {
+.menu-icono {    
     width: 50px;    
+    outline: none;
+    text-decoration: none;
+}
+.menu-icono:focus {
+    outline: none;
 }
 .menu label {
     cursor: pointer;
     display: none;
 }
 
+/* Logo Oscar */
 .logo-imagen {
     text-align: center;
     width: 100%;   
@@ -67,10 +84,89 @@
     width: 400px;
 }
 
+/*Direccion complemento */
+.d-container {
+      position: relative;
+      width: 100%;
+      height: auto;      
+      overflow: hidden; 
+}
+.d-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0)),
+        url('/images/fondo.jpg');
+    background-size: cover;  
+    background-position: center;  
+}
+.d-contenido {
+    display: flex;    
+    position: relative;
+    z-index: 2;
+    padding: 20px;    
+}
+.d-contenido img {
+    width: 25px;
+    height: 50px;
+}
+.d-contenido h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight:bold; 
+    margin-top: 15px;  
+    margin-left: 20px;
+    color: #EF8008;
+    font-size: 2em;
+}
+.d-lugar {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;    
+}
+.d-lugar p {
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    color: #804712;
+    font-size: 1.2em;
+}
+.d-maps {
+    position: relative;
+    z-index: 2;   
+    text-align: center; 
+    margin: 30px auto;
+    width: 90%; 
+    max-width: 800px; 
+    height: 400px;  
+    overflow: hidden;
+    border: 4px solid #EF8008;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;   
+    margin: 0;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    border: 0;
+}
+
 
 @media(max-width:720px){
     .menu {
-        padding: 30px;
+        padding: 0 20px 0;
     }
     .menu label {
         display: initial;
@@ -80,17 +176,40 @@
         top: 100%;
         left: 0;
         right: 0;        
-        display: none;
+        display: flex;
+        opacity: 0;
+        transform: translateY(-10px);
+        /*transition: opacity 0.5s ease, transform 0.5s ease;*/
+        pointer-events: none;
     }
     .menu .navbar ul li {
         width: 100%;
     }
-    .menu .navbar.open {
-        display: initial;        
-    }     
+    .menu .navbar.open {            
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        pointer-events: auto;
+    } 
+    .menu-icono {    
+        width: 45px;
+        padding-top: 20px;
+    }
+    .logo {
+        margin-left: 0;        
+        width: 35px;
+        height: 35px;
+     }    
 
     .logo-imagen img {
         width: 300px;
+    }
+
+    .d-contenido h2 {
+        font-size: 1.2em;
+    }
+    .d-lugar p {
+        font-size: 0.9em;
     }
          
 }
