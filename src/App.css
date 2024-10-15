@@ -164,6 +164,7 @@
 }
 
 
+
 @media(max-width:720px){
     .menu {
         padding: 0 20px 0;
@@ -211,6 +212,7 @@
     .d-lugar p {
         font-size: 0.9em;
     }
+    
          
 }
 
