@@ -19,7 +19,7 @@
     transition: min-height 0.5s ease;    
 }
 .header.open {
-    min-height: 36vh;
+    min-height: 17em;
 }
 .container {
     max-width: 1200px;
@@ -214,4 +214,8 @@
          
 }
 
-
+@media (max-width: 300px) { 
+    .d-contenido h2 {
+        font-size: 1em;
+    }
+}
