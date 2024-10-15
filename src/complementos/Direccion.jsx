@@ -1,22 +1,7 @@
-import React, { useEffect, useState } from 'react';
+
 
 const Direccion = () => {
-    const [maxWidth, setMaxWidth] = useState(window.innerWidth); // Estado para almacenar el ancho de la ventana
-
-    // Función para actualizar el ancho
-    const updateWidth = () => {
-        setMaxWidth(window.innerWidth);
-    };
-
-    // useEffect para agregar y limpiar el event listener
-    useEffect(() => {
-        window.addEventListener('resize', updateWidth); // Agrega el event listener
-
-        // Limpieza del event listener al desmontar el componente
-        return () => {
-            window.removeEventListener('resize', updateWidth);
-        };
-    }, []);
+    
   return (
     <div className="d-container">
         <div className="d-fondo">
@@ -24,8 +9,7 @@ const Direccion = () => {
         </div>
         <div className="d-contenido">
             <img src="/images/loguito.png" alt="c-logo" />
-            <h2>SCHEDULE AND LOCATION</h2>  
-            hol: {maxWidth}         
+            <h2>SCHEDULE AND LOCATION</h2> 
         </div>       
         <div className="d-lugar">
             <p>ALL WEEK 7:30 AM TO 7:00 PM</p>
