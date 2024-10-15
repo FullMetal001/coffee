@@ -19,7 +19,7 @@
     transition: min-height 0.5s ease;    
 }
 .header.open {
-    min-height: 40vh;
+    min-height: 36vh;
 }
 .container {
     max-width: 1200px;
@@ -43,7 +43,7 @@
 }
 .menu .navbar ul li a {
     font-size: 20px;
-    padding: 30px;
+    padding: 20px;
     color: #ce967b;
     display: block;    
     font-weight: 600;

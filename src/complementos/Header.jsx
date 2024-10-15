@@ -27,8 +27,9 @@ const Header = () => {
                 </label>
                 <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href='#'>Ubicacion</a></li>
-                        <li><a href='#'>Contacto</a></li>
+                        <li><a href='#'>Location</a></li>
+                        <li><a href='#'>Menu</a></li>
+                        <li><a href='#'>Contact</a></li>
                     </ul>
                 </nav>                
             </div>                       
