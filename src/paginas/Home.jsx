@@ -1,6 +1,8 @@
 import Header from '../complementos/Header'
 import Logo from '../complementos/Logo'
 import Direccion from '../complementos/Direccion'
+import Coffee from '../complementos/Coffee'
+import Footer from '../complementos/Footer'
 
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
         <Header />
         <Logo />
         <Direccion />
+        <Coffee />
+        <Footer />
     </div>
   )
 }
