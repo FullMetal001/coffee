@@ -22,7 +22,7 @@
     min-height: 17em;
 }
 .container {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 .menu {
@@ -175,19 +175,20 @@
     max-width: 200px;
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 50px;
     margin: 0 auto;    
     padding-top: 30px;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em; 
-    color: white;         
+    color: white;
 }
 .coffee-container {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
+    padding-left: 100px;
     max-width: 800px;
-    margin: 0 auto;        
+    margin: 0 auto; 
 }
 .coffee-cafe, .coffee-drinks {
     flex: 1; 
@@ -301,6 +302,7 @@
     .coffee-container {
         flex-direction: column;
         align-items: center;
+        padding: 30px;
     }
     .coffee-cafe {
         margin-right: 53px;
@@ -309,7 +311,8 @@
         width: 100%;        
         display: flex;
         justify-content: center;
-        max-width: 100%;        
+        max-width: 100%; 
+        padding-left: 0;       
     }
 
     /* Footer */

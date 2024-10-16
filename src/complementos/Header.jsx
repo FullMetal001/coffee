@@ -17,6 +17,12 @@ const Header = () => {
         };
     }, []);
 
+    const verElemento = (id) => {
+        const elemento = document.getElementById(id);
+        if (elemento) {
+            elemento.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <header className={`header ${menuOpen ? 'open' : ''}`}>
             <div className='menu container'>
@@ -27,9 +33,9 @@ const Header = () => {
                 </label>
                 <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href='#direccion'>Location</a></li>
-                        <li><a href='#menu-coffee'>Menu</a></li>
-                        <li><a href='#contacto'>Contact</a></li>
+                        <li><a onClick={() => verElemento('direccion')}>Location</a></li>
+                        <li><a onClick={() => verElemento('menu-coffee')}>Menu</a></li>
+                        <li><a onClick={() => verElemento('contacto')}>Contact</a></li>
                     </ul>
                 </nav>                
             </div>                       

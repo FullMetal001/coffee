@@ -3,10 +3,10 @@ import React from 'react'
 const Coffee = () => {
   return (
     <div className='coffee-bg'>
-    <div className='coffee-titulo-menu'>
+    <div className='coffee-titulo-menu' id='menu-coffee'>
         <h2>MENU</h2>
     </div>
-    <div className="coffee-container" id='menu-coffee'>
+    <div className="coffee-container">
         <div className='coffee-cafe'>
             <h2 className="coffee-tittle">
                 <img src="/images/loguito-b.png" alt="Café" className="coffee-icon" />
