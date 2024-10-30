@@ -230,8 +230,9 @@ html, body {
     margin: 10px 0 10px;    
 }
 .coffee-image {
-    max-width: 150px;
-    max-height: 150px;    
+    max-width: 250px;
+    max-height: 250px;    
+    filter: drop-shadow(10px -20px 15px rgb(22, 22, 20)); 
 }
 .coffee-list {
     list-style-type: none;      
@@ -257,7 +258,8 @@ html, body {
     align-items: stretch;
 }
 .drinks-image {
-    height: 600px; 
+    height: 650px; 
+    filter: drop-shadow(10px -15px 15px rgb(22, 22, 20));
 }
 .drinks-list {
     display: flex;
@@ -265,7 +267,7 @@ html, body {
     justify-content: space-between;
     list-style-type: none;      
     text-align: left;
-    height: 600px;
+    height: 650px;
 }
 .drinks-list li {
     font-family: "Open Sans", sans-serif;
