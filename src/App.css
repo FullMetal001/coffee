@@ -6,7 +6,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; 
-    list-style: none;
+    list-style: none;         
+}
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+.contenedor-principal {
+    background-color: #F8F3E5;  
+    margin: 0; 
+    padding: 0;  
 }
 
 /* Barra menu */
@@ -16,21 +26,21 @@
     align-items: center;
     min-height: 10vh;
     background-color: #F8F3E5;  
-    transition: min-height 0.5s ease;    
+    transition: min-height 0.5s ease;        
 }
 .header.open {
-    min-height: 17em;
+    min-height: 17em;   
 }
 .container {
     /*max-width: 1200px;*/
-    margin: 0 auto;
+    margin: 0 auto;   
 }
 .menu {
     position: relative;    
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    width: 100%; 
+    width: 100%;     
 }
 .logo {
     margin-left: 20px;   
@@ -48,7 +58,7 @@
     display: block;    
     font-weight: 600;
     text-decoration: none;
-    outline: none;
+    outline: none;    
 }
 .menu .navbar ul li a:focus {
     outline: none; 
@@ -79,10 +89,10 @@
     background-color: #F8F3E5;     
     max-width: 100%; 
     height: auto; 
-    padding-bottom: 70px;
+    padding-bottom: 70px;    
 }
 .logo-imagen img {
-    width: 250px;    
+    width: 250px;       
 }
 
 /*Direccion complemento */
@@ -90,7 +100,7 @@
       position: relative;
       width: 100%;
       height: auto;      
-      overflow: hidden; 
+      overflow: hidden;       
 }
 .d-fondo {
     position: absolute;
@@ -104,7 +114,7 @@
         linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(239, 128, 8, 1) 100%),
         url('/images/fondo.jpg');
     background-size: cover;  
-    background-position: center;  
+    background-position: center;     
 }
 .d-contenido {
     display: flex;    
@@ -170,7 +180,7 @@
     width: 100%;
     background: linear-gradient(rgb(239, 128, 8), rgba(239, 128, 8, 0.9)); 
     text-align: center;  
-    padding-bottom: 100px;   
+    padding-bottom: 100px; 
 }
 .coffee-titulo-menu {
     width: 100%;
@@ -182,7 +192,7 @@
     padding-top: 30px;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em; 
-    color: white;
+    color: white;       
 }
 .coffee-container {
     /*display: flex;
@@ -193,20 +203,20 @@
     margin: 0 auto; */ 
     display: flex;
     flex-direction: column;    
-    align-items: center;   
+    align-items: center; 
 }
 .coffee-cafe{    
     display: flex;
     flex-direction: column;    
     margin-bottom: 20px;
     text-align: left;
-    min-width: 500px; 
+    min-width: 500px;    
 }
 .coffee-tittle {      
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: white;
-    margin: 20px 0; 
+    margin: 20px 0;    
 }
 .coffee-icon {
     width: 25px;
@@ -217,7 +227,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    margin: 10px 0 10px;
+    margin: 10px 0 10px;    
 }
 .coffee-image {
     max-width: 150px;
@@ -239,11 +249,11 @@
     flex-direction: column;   
     text-align: left;
     margin-bottom: 20px; 
-    min-width: 500px;
+    min-width: 500px;   
 }
 .coffee-drinks-image {
     display: flex;
-    justify-content: center; 
+    justify-content: left; 
     align-items: stretch;
 }
 .drinks-image {
@@ -255,7 +265,7 @@
     justify-content: space-between;
     list-style-type: none;      
     text-align: left;
-    height: 600px;    
+    height: 600px;
 }
 .drinks-list li {
     font-family: "Open Sans", sans-serif;
@@ -263,26 +273,27 @@
     color: white;     
 }
 .price {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    color: #804712;
+    font-weight: 700;
+    opacity: 0;    
+    transition: opacity 2.0s ease;
 }
 .price.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1;    
 }
 
 /* Footer */
 .footer-container {
     margin: 30px;
-    text-align: center;    
+    padding-bottom: 20px;
+    text-align: center;         
 }
 .footer-container h2 {
     margin: 20px;
     font-size: 1.5em;
     font-family: "Open Sans", sans-serif;
     font-weight:bold;
-    color: #804712;
+    color: #804712;     
 }
 .footer-p1 {
     font-size: 1.1em;
@@ -352,26 +363,28 @@
 
     /* Menu bebidas */    
     .coffee-cafe{ 
-        min-width: 290px;        
+        min-width: 340px;
     }    
     .coffee-list {
-        font-size: 0.8em;
+        font-size: 0.7em;
+        padding-left: 10px;        
     }
     .coffee-image {
-        max-width: 80px;
-        max-height: 80px;  
+        max-width: 150px;
+        max-height: 150px;
     }
     .coffee-drinks {        
-        min-width: 290px;       
+        min-width: 290px;               
     }   
     .drinks-list {
-        font-size: 0.8em;
+        font-size: 0.7em;
+        padding-left: 15px;
         justify-content: space-between;
-        height: 400px; 
+        height: 400px;         
     }     
     .drinks-image {        
-        max-width: 120px;
-        max-height: 400px;
+        max-width: 200px;
+        max-height: 400px;        
     }
     
 
@@ -391,8 +404,37 @@
     }
     .coffee-image {
         visibility: hidden;
+        max-width: 0px;
     }
     .drinks-image {
         visibility: hidden;
+        max-width: 0px;
     }
+
+    /* Coffee */
+    .coffee-tittle {      
+        max-width: 200px;                  
+    }
+    .coffee-list-expresso, .coffee-list-latte, .coffee-list-short {        
+        justify-content: left; 
+        max-width: 200px;                           
+    }
+    .coffee-cafe{ 
+        min-width: 290px; 
+    } 
+    .coffee-drinks-image {
+        display: flex;
+        justify-content: left; 
+        align-items: stretch;
+        max-width: 200px;                
+    }
+
+    /* Footer */
+    .footer-p1 {
+        font-size: 0.8em;        
+    }
+    .footer-p2 {
+        font-size: 0.5em;       
+    }
+    
 }

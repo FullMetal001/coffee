@@ -9,7 +9,7 @@ const Coffee = () => {
             if (rect.top < window.innerHeight && rect.bottom > 0) {
                 setTimeout(() => {
                     price.classList.add('visible');
-                }, 1000);              
+                }, 800);              
             }else{
                 price.classList.remove('visible');
             }
